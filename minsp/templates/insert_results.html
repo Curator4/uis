@@ -2,26 +2,26 @@
 <form method="POST">
   {{ form.csrf_token }}
   <br />
-  <h3 align="center">Login</h3>
+  <h3 align="center">Insert test result</h3>
   <div class="form-group">
-    <label for="id">CPR-number</label>
+    <label for="result">Result</label>
     <input
-      type="id"
+      type="result"
       class="form-control"
-      id="id"
-      name="id"
-      placeholder="Enter CPR-number"
+      id="result"
+      name="result"
+      placeholder="Enter test result (float 0-15)"
     />
   </div>
 
   <div class="form-group">
-    <label for="password">Password</label>
+    <label for="date_of_test">Date of test</label>
     <input
-      type="password"
+      type="date_of_test"
       class="form-control"
-      id="password"
-      name="password"
-      placeholder="Enter password"
+      id="date_of_test"
+      name="date_of_test"
+      placeholder="Date of test (%Y-%m-%d)"
     />
   </div>
 

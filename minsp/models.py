@@ -53,6 +53,16 @@ def insert_Patients(cpr_number, name, password, address):
     conn.commit()
     cur.close()
 
+def insert_result(result, date_of_test, cpr_number):
+    cur = conn.cursor()
+    sql = """
+        INSERT INTO HbA1c_results(result, date_of_test, cpr_number)
+        VALUES (%s, %s, %s)
+    """
+    cur.execute(sql, (result, date_of_test, cpr_number))
+    conn.commit()
+    cur.close
+
 
 def select_Patients(cpr_number):
     cur = conn.cursor()
