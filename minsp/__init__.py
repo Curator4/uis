@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'omfaofnjuafafa23231'
 
 #database connect
-db = "dbname='minsp' user='curator' host='localhost' password='solitude4'"
+db = "dbname='minsp' user='sofus' host='localhost' password='123'"
 conn = psycopg2.connect(db)
 
 bcrypt = Bcrypt(app)

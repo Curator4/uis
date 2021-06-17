@@ -3,10 +3,10 @@ DELETE FROM Patients;
 DELETE FROM HbA1c_results;
 
 -- patient data
-INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5000, 'patient1', '$2b$12$KFkp1IEMGT4QrWwjPGhE3ejOv6Z3pYhx/S4qOoFbanR2sMiZqgeJO', 'address1');
-INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5001, 'patient2', '$2b$12$KFkp1IEMGT4QrWwjPGhE3ejOv6Z3pYhx/S4qOoFbanR2sMiZqgeJO', 'address2');
-INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5002, 'patient3', '$2b$12$KFkp1IEMGT4QrWwjPGhE3ejOv6Z3pYhx/S4qOoFbanR2sMiZqgeJO', 'address3');
-INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5003, 'patient4', '$2b$12$KFkp1IEMGT4QrWwjPGhE3ejOv6Z3pYhx/S4qOoFbanR2sMiZqgeJO', 'address4');
+INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5000, 'patient1', 'UIS', 'address1');
+INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5001, 'patient2', 'UIS', 'address2');
+INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5002, 'patient3', 'UIS', 'address3');
+INSERT INTO public.Patients(cpr_number, name, password, address) VALUES (5003, 'patient4', 'UIS', 'address4');
 
 -- patient 1 test data
 INSERT INTO public.HbA1c_results(result, date_of_test, CPR_number) VALUES (10.1, '2019-06-02', 5000);
