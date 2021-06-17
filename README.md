@@ -9,11 +9,9 @@ PAT4:  As a patient, I can see results of previous test samples, so I cansee whe
 PAT5:  As a patient, I can see an overview of all of my previous tests with analytics, so I can see whether I am improving or deteriorating.
 
 ## Rules:  
-Creating new accounts(patients) currently have little purpose as you can't add test results.
-
-Use numbers for cpr-number
-
 Passwords are not hashed, care
+Can create new users
+Can insert new data for users
 
 ## Requirements:
 Run the code below to install the necessary modules.
@@ -26,12 +24,8 @@ Run the code below to install the necessary modules.
 
 ## To run
 1. Install packages, see. 'requirements.txt'. (uses Matplotlib and mpld3)
-1. Set up the database
-2. Run 'main.py' 
+2. Set up the database
+3. Run 'main.py' 
 
-## Issues
-- Unsafe password storage, doesn't use Bcrypt to hash passwords (assume this is mandatory?)
-- Doesn't use wtforms to gather data (necessary?)
-- No feature to limit the amount of test results shown in plot (can be implemented if necessary)
-- No in-app way to insert data into the test results table (can be implemented)
-- Code breaks on irregular input (ie. string as cpr number)
+## Usage
+To log in, use a predefined user (username between 5000-5003) with password UIS or sign up your own. New users will have no pre-existing sample data

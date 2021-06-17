@@ -28,10 +28,12 @@ def HbA1c_results():
             b.append(e[1])
         fig = plt.figure()
         plt.plot_date(b, a, 'b-')
+        line = [7 for i in range(len(b))]
+        plt.plot_date(b, line, 'r-')
         mpld3.save_html(fig, path)
         flash("Plot successful", category='success')
 
-        return render_template("HbA1c_results.html", path=path)
+        return render_template("HbA1c_results.html", path=path, test_results=result)
 
 @results.route('/insert_results', methods=['GET', 'POST'])
 @login_required
